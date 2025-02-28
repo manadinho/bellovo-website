@@ -572,6 +572,8 @@ h2 {
 .social-link i {
     font-size: 20px; /* Icon size */
     color: var(--black); /* Black icon color */
+    position: relative;
+    top: 4px;
 }
 
 .social-link:hover {
