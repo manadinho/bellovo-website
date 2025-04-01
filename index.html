@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <title>Relax 30 - Bellovo</title>
+    <link rel="stylesheet" href="assets/bellovo.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+</head>
+<body>
+    <!-- Top Right -->
+    <img src="assets/wifi.png" style="
+        position: absolute;
+        top: 10%;
+        left: -6%;
+        z-index: -1;
+        pointer-events: none;
+        width: 1000px;
+        height: 1000px;
+    ">
+    <div class="container">
+            <div class="content">
+                <!-- Left Side Text Content -->
+                <div class="product-info">
+                    <h2>سکول بیل بجانے کا جدید آٹومیٹک حل</h2>
+                    <p class="description">
+                        ایک آسان پلگ اینڈ پلے حل ہے جو اسکولز، کالجز اور فیکٹریز کے لیے ڈیزائن کیا گیا ہے۔ یہ موبائل اور لیپ ٹاپ کے ذریعے وائی فائی کنفیگریشن کو سپورٹ کرتا ہے، کسی مینٹیننس کی ضرورت نہیں ہوتی، اور 10 گونگ بیلز تک کنٹرول کر سکتا ہے، جس میں روزانہ 100+ الارمز سیٹ کیے جا سکتے ہیں۔ پاکستان بھر میں سینکڑوں ادارے اس پر بھروسہ کرتے ہیں تاکہ خودکار اور قابل اعتماد شیڈولنگ یقینی بنائی جا سکے۔ ہر پیکیج میں 1 کنٹرولر اور 1 گونگ بیل شامل ہے، جو 1 سال کی وارنٹی کے ساتھ آتا ہے۔
+                    </p>
+                    <div class="shop-now-btn-section">
+                        <button class="buy-btn" onclick="openModal()">Shop Now</button>
+                    </div>
+                </div>
+
+                <!-- Centered Product Image -->
+                <div class="box-container heartbeat-container">
+                    <div class="heartbeat-bg"></div>
+                    <model-viewer src="assets/bellovo8.glb" 
+                                alt="3D Model" 
+                                camera-controls 
+                                camera-orbit="0deg 100deg"
+                                style="width: 100%; height: 800px;">
+                    </model-viewer>
+                </div>
+
+                <!-- Right Side Price and Quantity -->
+                <div class="price-container">
+                    <!-- <model-viewer src="bell.glb" 
+                                alt="3D Model" 
+                                auto-rotate 
+                                camera-controls 
+                                style="width: 100%; height: 500px;">
+                    </model-viewer> -->
+                    <!-- <div class="price-row">
+                        <div class="price-row-items">
+                            <div class="price-row-item">
+                                <div class="price-row-product">
+                                    <img src="bell.png" alt="" width="50px">
+                                    <span>2900 قیمت</span>
+                                </div>
+                                <div class="action-btn">
+                                    <button class="qty-btn" onclick="updateBellQuantity(-1)">-</button>
+                                    <span id="bell_qty">1</span>
+                                    <button class="qty-btn" onclick="updateBellQuantity(1)">+</button>
+                                </div>
+                            </div>
+                            <div class="price-row-item">
+                                <div class="price-row-product">
+                                    <img src="bellovo.jpeg" alt="" width="50px">
+                                    <span>7700 قیمت</span>
+                                </div>
+                                <div class="action-btn">
+                                    <button class="qty-btn" onclick="updateControllerQuantity(-1)">-</button>
+                                    <span id="controller_qty">1</span>
+                                    <button class="qty-btn" onclick="updateControllerQuantity(1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-row-cart">
+                            <button class="buy-btn" onclick="openModal()">Shop Now</button>
+                            <span class="price" id="price_section"></span>
+                        </div>
+                    </div> -->
+
+                    <!-- Area Tool -->
+                    <!-- <div class="area-tool compact-design">
+                        <div class="tool-input-line">
+                            <i class="fas fa-school"></i>
+                            <span class="tool-label">اسکول ایریا (کینال)</span>
+                            <input class="tool-inputfield" type="number" id="area_input" placeholder="e.g., 3" min="0" max="12" step="1" oninput="updateBellWithArea()">
+                        </div>
+                        <div class="tool-description">
+                            <small>ہر3 کینال کے لیے 1 بیل تجویز کی جاتی ہے۔</small>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- Social Links -->
+    </div>
+    <div class="social-tabs">
+        <div class="social-links">
+            <a href="https://www.bellovo.pl" target="_blank" class="social-link">
+                <i class="fas fa-globe"></i>
+                <span>www.bellovo.pk</span>
+            </a>
+            <a href="https://facebook.com/yourpage" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+                <span>@bellovo</span>
+            </a>
+            <a href="https://instagram.com/yourpage" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span>@bellovo</span>
+            </a>
+        </div>
+    </div>
+
+    <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <div class="whatsapp-note">مزید معلومات کے لیے</div>
+    
+
+    <!-- Modal -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- <h2 style="color: #2c93dd;">Order Form</h2> -->
+            <div style="display: flex; justify-content: space-around; align-items: center;">
+                <div class="price-row-items">
+                    <div class="price-row-item">
+                        <div class="price-row-product">
+                            <img src="assets/bell.png" alt="" width="50px">
+                            <span>2900 قیمت</span>
+                        </div>
+                        <div class="action-btn">
+                            <button class="qty-btn" onclick="updateBellQuantity(-1)">-</button>
+                            <span id="bell_qty">1</span>
+                            <button class="qty-btn" onclick="updateBellQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    <div class="price-row-item">
+                        <div class="price-row-product">
+                            <img src="assets/controller.png" alt="" width="50px">
+                            <span>7700 قیمت</span>
+                        </div>
+                        <div class="action-btn">
+                            <button class="qty-btn" onclick="updateControllerQuantity(-1)">-</button>
+                            <span id="controller_qty">1</span>
+                            <button class="qty-btn" onclick="updateControllerQuantity(1)">+</button>
+                        </div>
+                    </div>
+                    <span class="price" id="price_section" style="color: #2c93dd;"></span>
+                </div>
+                <div>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="اپنا نام درج کریں" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="اپنا فون نمبر درج کریں" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="address" id="address" rows="10" placeholder="مکمل پتہ درج کریں"></textarea>
+                        </div>
+                        <input type="text" id="bell_qty_input" name="bell_qty" value="1" hidden>
+                        <input type="text" id="controller_qty_input" name="controller_qty" value="1" hidden>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="position: relative; z-index: 0;">
+
+        <!-- Top Left -->
+        <!-- <img src="top-left.png" style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 100px;
+          pointer-events: none;
+        "> -->
+      
+        
+      
+        <!-- Bottom Left -->
+        <!-- <img src="bottom-left.png" style="
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          width: 100px;
+          pointer-events: none;
+        "> -->
+      
+        <!-- Bottom Right -->
+        <!-- <img src="bottom-right.png" style="
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+          width: 100px;
+          pointer-events: none;
+        "> -->
+      
+      </div>
+      
+    <script src="assets/bellovo.js"></script>
+</body>
+</html>
